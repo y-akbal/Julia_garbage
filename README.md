@@ -1,2 +1,2 @@
-# some_linear_algebra_with_julia
-Will give here some handy-dandy functions that I will use in my Linear Algebra class.
+# some_julia_functions
+Will give here some handy-dandy julia functions that I refer sometimes
