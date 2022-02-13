@@ -13,8 +13,8 @@ B = create_random_mat(size_) ### this is the matrix that is going to be the inve
 
 function iterate(A::Matrix{Float32}, B::Matrix{Float32}, n::Int64, lr::Float64)
     for i in 1:n
-        gradient = transpose(A)*(A*B- I)
-        B = B - lr*gradient
+        ∇f= transpose(A)*(A*B- I)
+        B = B - lr*∇f
         println(norm(A*B-I))
     end
     return B
