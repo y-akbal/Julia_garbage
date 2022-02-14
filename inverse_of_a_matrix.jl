@@ -2,7 +2,7 @@
 using LinearAlgebra
 
 size_ = 10000
-function create_random_mat(size_::Int32)
+function create_random_mat(size_::Int64)
     A = randn(size_, size_)
     return convert(Matrix{Float64}, A)
 end
