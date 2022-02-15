@@ -18,7 +18,7 @@ function iterate(A::Array{Float32,2}, B::Array{Float32,2}, n::Int64, lr::Float64
         ∇f = transpose_*(A*B - id)
         B = B - (lr/norm(B)).*∇f
         
-        println(norm(A*B-I))
+        println(norm(A*B-id))
         
     end
     return B
