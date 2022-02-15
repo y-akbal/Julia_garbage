@@ -16,7 +16,7 @@ function iterate(A::Array{Float32,2}, B::Array{Float32,2}, n::Int64, lr::Float64
     id = typeof(A)(I, size(A))
     for i in 1:n
         ∇f = transpose_*(A*B - id)
-        B = B - (lr).*∇f./norm(B)
+        B = B - (lr/norm(B)).*∇f
         
         println(norm(A*B-I))
         
