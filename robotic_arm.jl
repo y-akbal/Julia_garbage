@@ -62,4 +62,4 @@ p = Float32.([1,5])
 Lx, Ly = arm_move(a, p)
 using Plots
 scatter!(Lx, Ly)
-
+ 
